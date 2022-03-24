@@ -13,27 +13,27 @@ jobs:
       - aws-cli/setup
       - eb/setup
       - run:
-          name: Udagram-frontend Install
+          name: Frontend Install
           command: |
             npm run frontend:install
       - run:
-          name: Udagram-api Install
+          name: API Install
           command: |
             npm run backend:install
       - run:
-          name: Udagram-frontend Build
+          name: Frontend Build
           command: |
             npm run frontend:build
       - run:
-          name: Udagram-api Build
+          name: API Build
           command: |
             npm run backend:build
       - run:
-          name: Deploy frontend
+          name: Deploy Fronend
           command: |
             npm run frontend:deploy
       - run:
-          name: Deploy api
+          name: Deploy API
           command: |
             eb init deployment-api --platform node.js --region us-east-1
             npm run backend:deploy
