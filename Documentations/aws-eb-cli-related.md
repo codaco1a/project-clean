@@ -20,6 +20,9 @@
 * Create:
   `eb create --sample environtment-Name`
 
+* Use:
+  make sure you are using the same environment: `eb use environment-name`.
+
 * Deploy to EBS:
   You might need to execute `eb use environment-name`. Then `eb deploy`
   Don't forget to add Deploy PATH to .elasticbeanstalk/config.yml

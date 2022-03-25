@@ -5,6 +5,10 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
   build:
+  filters:
+      branches:
+        only:
+          - master
     docker:
       - image: "cimg/base:stable"
     steps:
@@ -33,7 +37,18 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
+          name: EBS init
+          command: |
+            npm run EBS:init
+      - run:
+          name: EBS use
+          command: |
+            npm run EBS:use
+      - run:
+          name: setenv EBS
+          command: |
+            npm run setenv:EBS
+      - run:
           name: Deploy API
           command: |
-            eb init deployment-api --platform node.js --region us-east-1
             npm run backend:deploy

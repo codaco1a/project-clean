@@ -8,7 +8,10 @@
         "frontend:test": "cd udagram-frontend && npm run test && e2e",
         "backend:test": "cd udagram-api && npm run build",
         "frontend:deploy": "cd udagram-frontend && npm run test",
-        "backend:deploy": "eb deploy deployment-project"
+        "backend:deploy": "eb deploy deployment-project",
+        "EBS:init": "eb init deployment-api --platform node.js --region us-east-1",
+        "EBS:use": "eb use deployment-api",
+        "setenv:EBS": "eb setenv PORT=$PORT JWT_SECRET=$JWT_SECRET"
     },
     "devDependencies": {
         "@angular/cli": "13.3.0"
