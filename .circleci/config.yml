@@ -9,8 +9,6 @@ jobs:
       branches:
         only:
           - master
-    docker:
-      - image: "cimg/base:stable"
     steps:
       - node/install
       - checkout
