@@ -10,7 +10,7 @@
         "frontend:deploy": "cd udagram-frontend && npm run deploy",
         "backend:deploy": "eb deploy deployment-project",
         "EBS:init": "eb init deployment-api --platform node.js --region us-east-1",
-        "EBS:use": "eb use deployment-api",
+        "EBS:use": "eb use deployment-project",
         "setenv:EBS": "eb setenv PORT=$PORT JWT_SECRET=$JWT_SECRET"
     },
     "devDependencies": {
