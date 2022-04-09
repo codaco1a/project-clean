@@ -16,5 +16,5 @@ import { Sequelize } from "sequelize-typescript";
 
 // Just like classroom's code.
 export const sequelize = new Sequelize(
-  "postgres://udgram:password123@amjaddb.cwsazyior4i9.us-east-1.rds.amazonaws.com:5432/udagram"
+  "postgres://udgram:password@us-east-1.rds.amazonaws.com:5432/postgres"
 );
