@@ -8,9 +8,9 @@
 
 ### EB:API
 
-[EBS](http://deployment-project.eba-y2biktwv.us-east-1.elasticbeanstalk.com/)
+[EBS](http://example.eba.us-east-1.elasticbeanstalk.com/)
 
 ### RDS:Relational Database
 
 Connection string:
-postgres://udgram:password123@amjaddb.cwsazyior4i9.us-east-1.rds.amazonaws.com:5432/udagram
+postgres://user_name:password@example.rds.amazonaws.com:5432/db_name
