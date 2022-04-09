@@ -6,8 +6,7 @@
   You can download AWS CLI setup application via AWS official website.
 
 * EBS:
-  AWS recommends that you download EBS via thier setup/script. You might need first to download python via pyenv package manager along side with git(SCM), virtualenv via pipx.
-  Remember that these are the recommended. You can just download each dependency as you wish.
+  AWS recommends that you download EBS via thier setup/script. You might need first to download python via pyenv package manager along side with git(SCM) and virtualenv.
 
 * Configuration:
   You will need to provide `AWS ACCESS KEY ID` and `AWS SECRET ACCESS KEY` to these CLIs.
